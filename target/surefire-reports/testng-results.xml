@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="136" started-at="2019-09-05T11:10:42Z" finished-at="2019-09-05T11:10:42Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="136" started-at="2019-09-05T11:10:42Z" finished-at="2019-09-05T11:10:42Z">
+      <class name="com.mycompany.fortuneteller.jsf.maven.testPerson">
+        <test-method status="PASS" signature="testgenerateMessage()[pri:0, instance:testgenerateMessage(com.mycompany.fortuneteller.jsf.maven.testPerson)]" name="testgenerateMessage" duration-ms="8" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgenerateMessage -->
+        <test-method status="PASS" signature="testsetMessage()[pri:0, instance:testsetMessage(com.mycompany.fortuneteller.jsf.maven.testPerson)]" name="testsetMessage" duration-ms="1" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsetMessage -->
+      </class> <!-- com.mycompany.fortuneteller.jsf.maven.testPerson -->
+      <class name="com.mycompany.fortuneteller.jsf.maven.TestTest">
+        <test-method status="PASS" signature="test()[pri:0, instance:test(com.mycompany.fortuneteller.jsf.maven.TestTest)]" name="test" duration-ms="4" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.mycompany.fortuneteller.jsf.maven.TestTest -->
+      <class name="com.mycompany.fortuneteller.jsf.maven.testRandomGenerator">
+        <test-method status="PASS" signature="testwhatFactorToConsider()[pri:0, instance:testwhatFactorToConsider(com.mycompany.fortuneteller.jsf.maven.testRandomGenerator)]" name="testwhatFactorToConsider" duration-ms="2" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testwhatFactorToConsider -->
+        <test-method status="PASS" signature="testgetTwoRandomNumbers()[pri:0, instance:testgetTwoRandomNumbers(com.mycompany.fortuneteller.jsf.maven.testRandomGenerator)]" name="testgetTwoRandomNumbers" duration-ms="1" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetTwoRandomNumbers -->
+        <test-method status="PASS" signature="testgetOneRandomNumber()[pri:0, instance:testgetOneRandomNumber(com.mycompany.fortuneteller.jsf.maven.testRandomGenerator)]" name="testgetOneRandomNumber" duration-ms="0" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetOneRandomNumber -->
+      </class> <!-- com.mycompany.fortuneteller.jsf.maven.testRandomGenerator -->
+      <class name="com.mycompany.fortuneteller.jsf.maven.testTranslator">
+        <test-method status="PASS" signature="testgetMessageByGender()[pri:0, instance:testgetMessageByGender(com.mycompany.fortuneteller.jsf.maven.testTranslator)]" name="testgetMessageByGender" duration-ms="1" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetMessageByGender -->
+        <test-method status="PASS" signature="testgetMessage()[pri:0, instance:testgetMessage(com.mycompany.fortuneteller.jsf.maven.testTranslator)]" name="testgetMessage" duration-ms="1" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetMessage -->
+        <test-method status="PASS" signature="testgetTemporaryMessage()[pri:0, instance:testgetTemporaryMessage(com.mycompany.fortuneteller.jsf.maven.testTranslator)]" name="testgetTemporaryMessage" duration-ms="1" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetTemporaryMessage -->
+        <test-method status="PASS" signature="testgetMessageByOccupation()[pri:0, instance:testgetMessageByOccupation(com.mycompany.fortuneteller.jsf.maven.testTranslator)]" name="testgetMessageByOccupation" duration-ms="0" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetMessageByOccupation -->
+        <test-method status="PASS" signature="testgetMessageByAge()[pri:0, instance:testgetMessageByAge(com.mycompany.fortuneteller.jsf.maven.testTranslator)]" name="testgetMessageByAge" duration-ms="1" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetMessageByAge -->
+        <test-method status="PASS" signature="testgetMessageByName()[pri:0, instance:testgetMessageByName(com.mycompany.fortuneteller.jsf.maven.testTranslator)]" name="testgetMessageByName" duration-ms="0" started-at="2019-09-05T13:10:42Z" finished-at="2019-09-05T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetMessageByName -->
+      </class> <!-- com.mycompany.fortuneteller.jsf.maven.testTranslator -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

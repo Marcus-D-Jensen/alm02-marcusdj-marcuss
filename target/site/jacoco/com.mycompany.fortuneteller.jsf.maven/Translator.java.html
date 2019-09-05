@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Translator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">fortuneteller-jsf-maven</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.fortuneteller.jsf.maven</a> &gt; <span class="el_source">Translator.java</span></div><h1>Translator.java</h1><pre class="source lang-java linenums">package com.mycompany.fortuneteller.jsf.maven;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/**
+ *
+ * @author marcu
+ * aer awesome
+ */
+
+
+public class Translator {
+    
+    private Person person;
+    
+    int decidingFactor;
+    
+    int randomNumber;
+
+<span class="fc" id="L22">    public Translator(Person person, int decidingFactor, int randomNumber) {</span>
+<span class="fc" id="L23">        this.person = person;</span>
+<span class="fc" id="L24">        this.decidingFactor = decidingFactor;</span>
+<span class="fc" id="L25">        this.randomNumber = randomNumber;</span>
+<span class="fc" id="L26">    }</span>
+    
+    public String getTemporaryMessage(){
+<span class="fc" id="L29">        return &quot;This is a temporary standard message&quot;;</span>
+    }
+    
+    public String getMessage(){
+<span class="fc" id="L33">        String mes=&quot;&quot;;</span>
+        
+<span class="pc bpc" id="L35" title="1 of 5 branches missed.">        switch(decidingFactor){</span>
+            
+            case 0:{//The name decides the message
+<span class="fc" id="L38">                mes=getMessageByName();</span>
+<span class="fc" id="L39">                break;</span>
+            }
+            case 1:{//Age decides the message
+<span class="fc" id="L42">                mes=getMessageByAge();</span>
+<span class="fc" id="L43">                break;</span>
+            }
+            case 2:{//occupasion decides the message
+<span class="fc" id="L46">                mes=getMessageByOccupation();</span>
+<span class="fc" id="L47">                break;</span>
+            }
+            case 3:{//gender decides the message
+<span class="fc" id="L50">                mes=getMessageByGender();</span>
+                break;
+            }
+            
+        }
+<span class="fc" id="L55">        return mes;</span>
+    }
+
+    public String getMessageByName() {
+<span class="fc bfc" id="L59" title="All 2 branches covered.">     if(person.getNamn().contains(&quot;sandra&quot;)){</span>
+<span class="fc" id="L60">         return &quot;Det var ett fint namn!&quot;;</span>
+     }
+<span class="fc bfc" id="L62" title="All 2 branches covered.">     else if (person.getNamn().contains(&quot;marcus&quot;))</span>
+<span class="fc" id="L63">         return &quot;Ett ordentligt namn!&quot;;</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">     else if (person.getNamn().contains(&quot;a&quot;))</span>
+<span class="fc" id="L65">         return &quot;Ja det ar ju ocksa ett okej namn&quot;;</span>
+     else
+<span class="fc" id="L67">         return &quot;Njea det namnet godkanner vi inte riktigt.&quot;;</span>
+    }
+    
+
+    public String getMessageByAge() {
+<span class="fc bfc" id="L72" title="All 2 branches covered.">        if(person.getAlder() &lt; 18)</span>
+<span class="fc" id="L73">            return &quot;Du ar inte gammal nog for att vara har!&quot;;</span>
+<span class="fc bfc" id="L74" title="All 2 branches covered.">        else if (person.getAlder() &gt; 80)</span>
+<span class="fc" id="L75">            return &quot;oj du var gammal du!&quot;;</span>
+        else
+<span class="fc" id="L77">            return &quot;Du ar i livets gyllende ar, vad trevligt!&quot;;</span>
+    }
+
+    public String getMessageByGender() {
+<span class="fc bfc" id="L81" title="All 2 branches covered.">        if(person.getKon().equalsIgnoreCase(&quot;horse&quot;))</span>
+<span class="fc" id="L82">            return &quot;HORSE IS NOT A GENDER STUPID&quot;;</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        else if (person.getKon().equalsIgnoreCase(&quot;man&quot;))</span>
+<span class="fc" id="L84">            return &quot;Oj vilka stora muskler du har!&quot;;</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">        else if (person.getKon().equalsIgnoreCase(&quot;woman&quot;))</span>
+<span class="fc" id="L86">            return &quot;Vilket fint hår du har&quot;;</span>
+        else
+<span class="fc" id="L88">            return &quot;Du ser bra ut idag!&quot;;</span>
+    }
+
+    public String getMessageByOccupation() {
+<span class="fc bfc" id="L92" title="All 2 branches covered.">        if(person.getJobb().contains(&quot;prog&quot;))</span>
+<span class="fc" id="L93">            return &quot;Du ar en del av framtiden du!&quot;;</span>
+<span class="fc bfc" id="L94" title="All 2 branches covered.">        else if (person.getJobb().contains(&quot;rar&quot;))</span>
+<span class="fc" id="L95">            return &quot;Du skapar framtidens ledare du!&quot;;</span>
+<span class="fc bfc" id="L96" title="All 2 branches covered.">        else if (person.getJobb().contains(&quot;e&quot;))</span>
+<span class="fc" id="L97">            return &quot;Oj du har en bra framtid du!&quot;;</span>
+<span class="fc bfc" id="L98" title="All 2 branches covered.">        else if(person.getJobb().contains(&quot;a&quot;))</span>
+<span class="fc" id="L99">            return &quot;Hoppas ditt jobb gar bra!&quot;;</span>
+        else
+<span class="fc" id="L101">            return &quot;Konstigt jobb det dar?&quot;;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
